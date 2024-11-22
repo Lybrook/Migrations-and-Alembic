@@ -1,53 +1,63 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-const Navbar = () => {
+const NavBar = () => {
   return (
-    <nav className="p-6 shadow-2xl rounded-lg">
-  <div className="container mx-auto flex justify-between items-center">
-    <h1 className="text-5xl md:text-7xl font-light text-xl tracking-tight font-serif bg-clip-text bg-gradient-to-r from-gray-800 via-gray-900 to-black tracking-tight leading-tight font-sans antialiased transform hover:scale-105 transition duration-300">
-      KOSALA'S FURNITURE
-    </h1>
-    
-    
-    <ul className="flex space-x-12">
-      <li>
-        <Link
-          to="/"
-          className="text-gray-800 font-light text-2xl tracking-wide font-serif uppercase transition duration-300 transform hover:text-yellow-500 hover:underline hover:scale-110"
-        >
-          Home
-        </Link>
-      </li>
-      <li>
-        <Link
-          to="/about"
-          className="text-gray-800 font-medium text-xl tracking-tight font-serif italic transition duration-300 transform hover:text-yellow-500 hover:underline hover:scale-110"
-        >
-          About
-        </Link>
-      </li>
-      <li>
-        <Link
-          to="/gallery"
-          className="text-gray-800 font-medium text-2xl tracking-wider font-sans transition duration-300 transform hover:text-yellow-500 hover:underline hover:scale-110"
-        >
-          Gallery
-        </Link>
-      </li>
-      <li>
-        <Link
-          to="/services"
-          className="text-gray-800 font-light text-xl tracking-tight font-serif transition duration-300 transform hover:text-yellow-500 hover:underline hover:scale-110"
-        >
-          Services
-        </Link>
-      </li>
-    </ul>
-  </div>
-</nav>
+    <nav className="p-6 bg-black text-gray-200 shadow-lg">
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
+        <ul className="flex flex-col md:flex-row items-center md:space-x-12 space-y-4 md:space-y-0">
+          <li>
+            <a
+              href="/"
+              className="uppercase font-light text-lg tracking-wider transition duration-300 transform hover:text-yellow-500 hover:scale-110"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="/about"
+              className="uppercase font-light text-lg tracking-wider transition duration-300 transform hover:text-yellow-500 hover:scale-110"
+            >
+              About
+            </a>
+          </li>
+          <li>
+            <a
+              href="/gallery"
+              className="uppercase font-light text-lg tracking-wider transition duration-300 transform hover:text-yellow-500 hover:scale-110"
+            >
+              Gallery
+            </a>
+          </li>
+        </ul>
 
+        <div className="text-center">
+          <div className="text-5xl font-extrabold text-yellow-500">KF</div>
+          <p className="text-lg italic font-medium text-yellow-200">Kosala's Furniture</p>
+          <p className="text-sm italic text-gray-400">Custom Furniture</p>
+        </div>
+
+        <ul className="flex flex-col md:flex-row items-center md:space-x-12 space-y-4 md:space-y-0">
+          <li>
+            <a
+              href="/services"
+              className="uppercase font-light text-lg tracking-wider transition duration-300 transform hover:text-yellow-500 hover:scale-110"
+            >
+              Services
+            </a>
+          </li>
+          <li>
+            <a
+              href="/contact"
+              className="uppercase font-light text-lg tracking-wider transition duration-300 transform hover:text-yellow-500 hover:scale-110"
+            >
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   );
 };
 
-export default Navbar;
+export default NavBar;

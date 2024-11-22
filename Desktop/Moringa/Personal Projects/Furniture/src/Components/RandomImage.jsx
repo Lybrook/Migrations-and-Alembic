@@ -27,12 +27,12 @@ const RandomImage = () => {
   };
 
   return (
-    <section className="p-8 bg-gray-100 h-screen flex flex-col justify-center items-center">
-      <div className="flex justify-center items-center w-full h-full">
+    <section className=" bg-gray-100 h-screen w-full flex flex-col items-center">
+      <div className=" w-full h-full">
         <img
           src={currentImage}
           alt="Random display"
-          className="w-full h-full object-cover rounded-lg shadow-lg"
+          className="w-full h-full shadow-lg"
         />
       </div>
       <div className="flex justify-center mt-4 space-x-2 absolute bottom-4">

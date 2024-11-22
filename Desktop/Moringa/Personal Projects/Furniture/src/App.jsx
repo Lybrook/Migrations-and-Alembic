@@ -5,6 +5,7 @@ import Home from './Pages/Home';
 import AboutPage from './Pages/AboutPage';
 import Services from './Components/Services';
 import GalleryPage from './Pages/GalleryPage';
+import ContactForm from './Components/ContactForm';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/services" element={<Services />} />
         <Route path="/gallery" element={<GalleryPage />} />
+        <Route path="/contact" element={<ContactForm />} />
       </Routes>
     </Router>
   );

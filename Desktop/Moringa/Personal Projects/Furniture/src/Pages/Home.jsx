@@ -5,6 +5,7 @@ import Gallery from '../Components/Gallery';
 import Services from '../Components/Services';
 import Footer from '../Components/Footer';
 import RandomImage from '../Components/RandomImage';
+import ContactForm from '../Components/ContactForm';
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
        <Hero />
       <Gallery />
       <Services />
+      <ContactForm />
       <Footer />
     </div>
   );

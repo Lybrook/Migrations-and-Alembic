@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Components/NavBar';
 import Home from './Pages/Home';
 import AboutPage from './Pages/AboutPage';
-import Services from './Components/Services';
+import ServicePage from './Pages/ServicePage';
 import GalleryPage from './Pages/GalleryPage';
-import ContactForm from './Components/ContactForm';
+import ContactFormPage from './Pages/ContactFormPage';
 
 function App() {
   return (
@@ -14,9 +14,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/services" element={<Services />} />
+        <Route path="/services" element={<ServicePage />} />
         <Route path="/gallery" element={<GalleryPage />} />
-        <Route path="/contact" element={<ContactForm />} />
+        <Route path="/contact" element={<ContactFormPage />} />
       </Routes>
     </Router>
   );
